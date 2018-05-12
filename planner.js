@@ -1,7 +1,7 @@
 window.addEventListener("load", async (e) => {
   // Compile services.
   let services = {};
-  let serviceData = await (await fetch("/data/smeltville/services.json")).json();
+  let serviceData = await (await fetch("./data/smeltville/services.json")).json();
   serviceData.forEach((service) => {
     services[service.name] = service;
   });
@@ -11,7 +11,7 @@ window.addEventListener("load", async (e) => {
   // Compile stations.
   let stations = {};
   let places = [];
-  let stationData = await (await fetch("/data/smeltville/overworld.json")).json();
+  let stationData = await (await fetch("./data/smeltville/overworld.json")).json();
   stationData.forEach((station) => {
     stations[station.name] = station;
     places.push({id: station.name, label: station.label + " Station", station: station.name});
@@ -20,7 +20,7 @@ window.addEventListener("load", async (e) => {
   console.log(stations);
 
   // Compile places.
-  let placeData = await (await fetch("/data/smeltville/places.json")).json();
+  let placeData = await (await fetch("./data/smeltville/places.json")).json();
   places = places.concat(placeData).sort((a, b) => {
     if (a.label > b.label) {
       return 1;
@@ -265,7 +265,7 @@ window.addEventListener("load", async (e) => {
           } else {
             let p = document.createElement("p");
             p.innerText = "non-stop";
-            p.classList.add("my-3");
+            p.classList.add("my-3c  ");
             textDiv.append(p);
           }
           let destination = document.createElement("h4");
