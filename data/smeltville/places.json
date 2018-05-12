@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cube5",
+    "label": "cube5",
+    "coords": [-31, 71, 124],
+    "stations": ["smetro-quarry", "ldr-smeltville"]
+  },
+  {
+    "id": "cth1",
+    "label": "Crystal Tower Hotel",
+    "coords": [-51, 68, 197],
+    "stations": ["smetro-crystal-tower"]
+  },
+  {
+    "id": "spaceport-crystal-tower",
+    "label": "Crystal Tower Spaceport",
+    "coords": [-91, 72, 216],
+    "stations": ["smetro-crystal-tower"]
+  }
+]

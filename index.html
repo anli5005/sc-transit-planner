@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SmeltCraft Trip Planner</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-xl-3">
+          <div class="form-group my-2">
+            <label class="text-white" for="from-input">From</label>
+            <select type="text" class="form-control shadow" id="from-input">
+            </select>
+          </div>
+          <div class="form-group my-2">
+            <label class="text-white" for="from-input">To</label>
+            <select type="text" class="form-control shadow" id="to-input">
+            </select>
+          </div>
+          <button class="my-2 btn btn-primary shadow" id="route-button">
+            Find Route
+          </button>
+          <div id="route-output" class="d-none my-4 p-2 bg-white rounded shadow">
+            <h3 class="display-4" id="route-header"><span id="time"></span> <small class="text-black-50">sec</small></h3>
+            <h3 id="route-error">Can't find a route</h3>
+            <div id="route-layout">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="planner.js"></script>
+    <script defer src="/lib/fontawesome-all.min.js"></script>
+  </body>
+</html>

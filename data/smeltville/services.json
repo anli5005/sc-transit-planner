@@ -1,0 +1,21 @@
+[
+  {
+    "name": "smetro-a",
+    "label": "Smetro Line A",
+    "subtitle": "Smeltville Line",
+    "description": "The smart Smeltville metro.",
+    "type": "prt",
+    "mode": "subway",
+    "color": "#F07613",
+    "speed": 8
+  },
+  {
+    "name": "ldr-1",
+    "label": "LDR 1",
+    "subtitle": "Smeltville-Stronghold",
+    "description": "The Long Distance Railroad 1 takes you from the city of Smeltville to the faraway Stronghold, stopping near points such as the swamp.",
+    "type": "normal",
+    "mode": "train",
+    "color": "#171f91"
+  }
+]

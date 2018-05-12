@@ -1,0 +1,194 @@
+[
+  {
+    "name": "smetro-sugar-cane",
+    "label": "Sugar Cane",
+    "coords": [-73, 64, 54],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-acacia-jct", "distance": 39, "platform": 1, "direction": "towards Smeltville"}
+    ],
+    "exits": {
+      "1": {"name": "Sugar Cane Farm/HORSEWAY 1", "coords": [-58, 69, 51]},
+      "2": {"name": "Wheat Farm/Ocean Shore", "coords": [-79, 68, 43]}
+    }
+  },
+  {
+    "name": "smetro-acacia-jct",
+    "label": "Acacia Junction",
+    "coords": [-72, 64, 101],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-sugar-cane", "distance": 39, "platform": 2, "direction": "to Sugar Cane"},
+      {"service": "smetro-a", "destination": "smetro-smeltery", "distance": 51, "platform": 1, "direction": "towards Sand Lake"},
+      {"service": "smetro-a", "destination": "smetro-quarry", "distance": 94, "platform": 1, "direction": "towards Sand Lake"}
+    ],
+    "transfers": [
+      {"destination": "ldr-smeltville", "exit": "5", "entrance": "1"}
+    ],
+    "exits": {
+      "1": {"name": "Smeltery/Chests", "coords": [-60, 70, 118]},
+      "2": {"name": "Melon Farm/HORSEWAY 1 N", "coords": [-52, 70, 95]},
+      "3": {"name": "anli5005's base/HORSEWAY 1 S/HORSEWAY 2", "coords": [-82, 69, 114]},
+      "4": {"name": "Horseway 2 W", "coords": [-72, 69, 92]},
+      "5": {"name": "LDR Terminal/Horseway 1 N", "coords": [-68, 70, 103]},
+      "6": {"name": "Horseway 1 S", "coords": [-67, 63, 112]}
+    }
+  },
+  {
+    "name": "smetro-quarry",
+    "label": "Quarry",
+    "coords": [-32, 60, 123],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-acacia-jct", "distance": 94, "platform": 1, "direction": "towards Smeltville"},
+      {"service": "smetro-a", "destination": "smetro-smeltery", "distance": 82, "platform": 1, "direction": "towards Smeltville"}
+    ],
+    "exits": {
+      "1": {"name": "Quarries", "coords": [-25, 69, 109]},
+      "2": {"name": "Quarry Chests", "coords": [-39, 71, 125]},
+      "5": {"name": "cube5", "coords": [-27, 71, 124]}
+    }
+  },
+  {
+    "name": "smetro-smeltery",
+    "label": "Smeltery",
+    "coords": [-72, 64, 151],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-quarry", "distance": 82, "platform": 2, "direction": "to Sugar Cane"},
+      {"service": "smetro-a", "destination": "smetro-acacia-jct", "distance": 51, "platform": 2, "direction": "to Sugar Cane"},
+      {"service": "smetro-a", "destination": "smetro-spawn-point", "distance": 106, "platform": 1, "direction": "towards Sand Lake"},
+      {"service": "smetro-a", "destination": "smetro-crystal-tower", "distance": 57, "platform": 1, "direction": "towards Sand Lake"}
+    ],
+    "exits": {
+      "1": {"name": "Smeltery/anli5005/HORSEWAY 1", "coords": [-73, 70, 142]},
+      "2": {"name": "Cobble House/Hero Villager/Nether", "coords": [-74, 69, 157]}
+    }
+  },
+  {
+    "name": "smetro-spawn-point",
+    "label": "Spawn Point",
+    "coords": [-29, 64, 188],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-smeltery", "distance": 100, "platform": 1, "direction": "towards Smeltville"},
+      {"service": "smetro-a", "destination": "smetro-crystal-tower", "distance": 99, "platform": 1, "direction": "towards Smeltville"}
+    ],
+    "exits": {
+      "1": {"name": "Spawn Point Pathway", "coords": [-28, 69, 180]},
+      "2": {"name": "Spawn Point/MWS", "coords": [-21, 69, 189]}
+    }
+  },
+  {
+    "name": "smetro-crystal-tower",
+    "label": "Crystal Tower",
+    "coords": [-72, 64, 207],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-smeltery", "distance": 57, "platform": 2, "direction": "to Sugar Cane"},
+      {"service": "smetro-a", "destination": "smetro-spawn-point", "distance": 68, "platform": 2, "direction": "to Sugar Cane"},
+      {"service": "smetro-a", "destination": "smetro-sand-lake", "distance": 108, "platform": 1, "direction": "towards Sand Lake"}
+    ],
+    "exits": {
+      "A": {"name": "Jetpack Plains/Spaceport", "coords": [-73, 72, 222]},
+      "B": {"name": "Mountains", "coords": [-78, 64, 197]},
+      "C": {"name": "Crystal Tower Hotel", "coords": [-56, 60, 195]}
+    }
+  },
+  {
+    "name": "smetro-sand-lake",
+    "label": "Sand Lake",
+    "coords": [-72, 73, 316],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-crystal-tower", "distance": 108, "platform": 2, "direction": "to Sugar Cane"},
+      {"service": "smetro-a", "destination": "smetro-ocean", "distance": 120, "platform": 1, "direction": "to Mountain Archway"}
+    ],
+    "transfers": [
+      {"destination": "ldr-sand-lake", "exit": "1", "entrance": "1"}
+    ],
+    "exits": {
+      "1": {"name": "Elevator to LDR STATION", "coords": [-79, 86, 323]},
+      "2": {"name": "Sand Lake/Sunflower Plains", "coords": [-69, 71, 324]}
+    }
+  },
+  {
+    "name": "smetro-ocean",
+    "label": "Ocean",
+    "coords": [-72, 63, 438],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-sand-lake", "distance": 120, "platform": 2, "direction": "to Sugar Cane"},
+      {"service": "smetro-a", "destination": "smetro-soon-to-be-destroyed-mountain", "distance": 106, "platform": 1, "direction": "to Mountain Archway"}
+    ],
+    "transfers": [
+      {"destination": "ldr-mountain-jct", "exit": "3", "entrance": "1"}
+    ],
+    "exits": {
+      "1": {"name": "Boat Dock", "coords": [-81, 63, 428]},
+      "2": {"name": "CTH 2.0/Sand Bar", "coords": [-69, 63, 428]},
+      "3": {"name": "Mountain Jct LDR Station", "coords": [-78, 64, 446]}
+    }
+  },
+  {
+    "name": "smetro-soon-to-be-destroyed-mountain",
+    "label": "Mountain Archway",
+    "coords": [-154, 74, 462],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-ocean", "distance": 106, "platform": 1, "direction": "towards Smeltville"}
+    ],
+    "exits": {
+      "2": {"name": "Arch Mountains", "coords": [-167, 74, 452]},
+      "3": {"name": "Gravel Mountains", "coords": [-165, 74, 433]}
+    }
+  },
+  {
+    "name": "ldr-smeltville",
+    "label": "Smeltville",
+    "coords": [-70, 79, 109],
+    "neighbors": [
+      {"service": "ldr-1", "destination": "ldr-sand-lake", "distance": 216, "time": 29, "platform": 3, "direction": "to Stronghold"}
+    ],
+    "transfers": [
+      {"destination": "smetro-acacia-jct", "exit": "1", "entrance": "5"}
+    ],
+    "exits": {
+      "1": {"name": "HORSEWAY 1/Smetro/Farms", "coords": [-68, 70, 103]},
+      "2": {"name": "HORSEWAY 2/Smetro/Ocean", "coords": [-81, 75, 111]},
+      "3": {"name": "HORSEWAY 2/Quarries", "coords": [-62, 75, 111]}
+    }
+  },
+  {
+    "name": "ldr-sand-lake",
+    "label": "Sand Lake LDR",
+    "coords": [-82, 86, 318],
+    "neighbors": [
+      {"service": "ldr-1", "destination": "ldr-smeltville", "distance": 216, "time": 29, "platform": 3, "direction": "to Smeltville"},
+      {"service": "ldr-1", "destination": "ldr-mountain-jct", "distance": 129, "time": 33, "platform": 3, "direction": "to Stronghold"}
+    ],
+    "transfers": [
+      {"destination": "smetro-sand-lake", "exit": "1", "entrance": "1"}
+    ],
+    "exits": {
+      "1": {"name": "Smetro", "coords": [-79, 86, 323]}
+    }
+  },
+  {
+    "name": "ldr-mountain-jct",
+    "label": "Mountain Junction",
+    "coords": [-82, 86, 447],
+    "neighbors": [
+      {"service": "ldr-1", "destination": "ldr-sand-lake", "distance": 129, "time": 33, "platform": 3, "direction": "to Smeltville"},
+      {"service": "ldr-1", "destination": "ldr-stronghold", "distance": 1535, "time": 206, "platform": 3, "direction": "to Stronghold"}
+    ],
+    "transfers": [
+      {"destination": "smetro-ocean", "exit": "1", "entrance": "3"}
+    ],
+    "exits": {
+      "1": {"name": "Smetro Station", "coords": [-78, 84, 446]}
+    }
+  },
+  {
+    "name": "ldr-stronghold",
+    "label": "Stronghold",
+    "coords": [186, 36, 1715],
+    "neighbors": [
+      {"service": "ldr-1", "destination": "ldr-mountain-jct", "distance": 1535, "time": 206, "platform": 1, "direction": "to Smeltville"}
+    ],
+    "exits": {
+      "1": {"name": "Stronghold", "coords": [191, 36, 1715]}
+    }
+  }
+]
