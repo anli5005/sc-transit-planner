@@ -265,7 +265,7 @@ window.addEventListener("load", async (e) => {
           } else {
             let p = document.createElement("p");
             p.innerText = "non-stop";
-            p.classList.add("my-3c  ");
+            p.classList.add("my-3");
             textDiv.append(p);
           }
           let destination = document.createElement("h4");
