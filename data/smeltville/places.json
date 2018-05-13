@@ -16,5 +16,167 @@
     "label": "Crystal Tower Spaceport",
     "coords": [-91, 72, 216],
     "stations": ["smetro-crystal-tower"]
+  },
+  {
+    "id": "chocolate-storage",
+    "label": "Chocolate Storage",
+    "coords": [23, 67, 103],
+    "stations": ["smetro-quarry"]
+  },
+  {
+    "id": "quarry-chests-w",
+    "label": "Quarry Chests West",
+    "coords": [-45, 71, 124],
+    "stations": ["smetro-smeltery", "smetro-quarry"]
+  },
+  {
+    "id": "smeltville-smeltery",
+    "label": "Smeltery",
+    "coords": [-61, 70, 134],
+    "stations": ["smetro-smeltery"]
+  },
+  {
+    "id": "sugar-cane-concrete",
+    "label": "Turtle Concrete Processor",
+    "coords": [-81, 68, 48],
+    "stations": ["smetro-sugar-cane"]
+  },
+  {
+    "id": "smeltville-wheat-farm",
+    "label": "Wheat Farm",
+    "coords": [-76, 69, 53],
+    "stations": ["smetro-sugar-cane"]
+  },
+  {
+    "id": "smeltville-sugar-cane-farm",
+    "label": "Sugar Cane Farm",
+    "coords": [-53, 70, 60],
+    "stations": ["smetro-sugar-cane"]
+  },
+  {
+    "id": "smeltville-cactus-farm",
+    "label": "Cactus Farm",
+    "coords": [-38, 70, 51],
+    "stations": ["smetro-sugar-cane"]
+  },
+  {
+    "id": "pumpkin-pond",
+    "label": "Pumpkin Pond",
+    "coords": [-61, 69, 69],
+    "stations": ["smetro-sugar-cane"]
+  },
+  {
+    "id": "melon-farm",
+    "label": "Melon Farm",
+    "coords": [-61, 70, 86],
+    "stations": ["smetro-acacia-jct", "ldr-smeltville"]
+  },
+  {
+    "id": "sugar-cane-pond",
+    "label": "Sugar Cane Pond",
+    "coords": [-58, 69, 126],
+    "stations": ["smetro-acacia-jct", "ldr-smeltville", "smetro-smeltery", "smetro-quarry"]
+  },
+  {
+    "id": "anli5005-old-house",
+    "label": "anli5005 Glass Cube",
+    "coords": [-81, 66, 137],
+    "stations": ["smetro-acacia-jct", "smetro-smeltery"]
+  },
+  {
+    "id": "rail-duplicator",
+    "label": "Legit Rail Duplicator",
+    "coords": [-34, 71, 158],
+    "stations": ["smetro-quarry", "smetro-smeltery", "smetro-spawn-point"]
+  },
+  {
+    "id": "sard-cobble-house",
+    "label": "Cobble House & Mine",
+    "coords": [-51, 71, 161],
+    "stations": ["smetro-smeltery"]
+  },
+  {
+    "id": "smeltville-gps-cluster",
+    "label": "GPS Cluster",
+    "coords": [-61, 253, 167],
+    "stations": ["smetro-smeltery"]
+  },
+  {
+    "id": "smeltville-nether-portal",
+    "label": "Nether Portal",
+    "coords": [-71, 70, 163],
+    "stations": ["smetro-smeltery"]
+  },
+  {
+    "id": "hero-villager",
+    "label": "Hero Villager",
+    "coords": [-76, 70, 161],
+    "stations": ["smetro-smeltery"]
+  },
+  {
+    "id": "acacia-peak",
+    "label": "Acacia Peak",
+    "coords": [-136, 101, 153],
+    "stations": ["smetro-smeltery"]
+  },
+  {
+    "id": "acacia-pass",
+    "label": "Acacia Pass",
+    "coords": [-127, 70, 129],
+    "stations": ["smetro-acacia-jct", "ldr-smeltville"]
+  },
+  {
+    "id": "floating-islands",
+    "label": "Floating Islands",
+    "coords": [-106, 65, 204],
+    "stations": ["smetro-crystal-tower"]
+  },
+  {
+    "id": "acacia-arches",
+    "label": "Acacia Arches",
+    "coords": [-126, 70, 194],
+    "stations": ["smetro-crystal-tower"]
+  },
+  {
+    "id": "spawn-point",
+    "label": "Spawn Point",
+    "coords": [0, 75, 189],
+    "stations": ["smetro-spawn-point"]
+  },
+  {
+    "id": "mws",
+    "label": "Minecraft Web Services",
+    "coords": [-5, 177, 198],
+    "stations": ["smetro-spawn-point"]
+  },
+  {
+    "id": "jetpack-plains",
+    "label": "Jetpack Plains",
+    "coords": [-64, 69, 227],
+    "stations": ["smetro-crystal-tower"]
+  },
+  {
+    "id": "jetpack-cave",
+    "label": "Jetpack Cave",
+    "coords": [-54, 64, 239],
+    "stations": ["smetro-crystal-tower"]
+  },
+  {
+    "id": "gravel-peak",
+    "label": "Gravel Peak",
+    "coords": [-215, 110, 244],
+    "stations": ["smetro-smeltery", "smetro-crystal-tower"]
+  },
+  {
+    "id": "sand-peak",
+    "label": "Sand Peak",
+    "coords": [-64, 91, 340],
+    "stations": ["smetro-sand-lake"]
+  },
+  {
+    "id": "sand-bar",
+    "label": "Sand Bar",
+    "coords": [-61, 63, 421],
+    "stations": ["smetro-ocean"]
   }
 ]
