@@ -1,0 +1,82 @@
+[
+  {
+    "name": "mc-1",
+    "label": "MC City Line 1 - Highway 1 Line",
+    "subtitle": "TNT Center-Citi Tower",
+    "description": "This subway line forms the backbone of the Minecraft City transit network.",
+    "type": "normal",
+    "mode": "subway",
+    "color": "#A12722",
+    "speed": 8
+  },
+  {
+    "name": "mc-2",
+    "label": "MC City Line 2 - City Loop Line",
+    "subtitle": "Citi Tower-Welcome Center-Animal Hall",
+    "description": "This subway line loops around Central Minecraft City.",
+    "type": "normal",
+    "mode": "subway",
+    "color": "#3AAFD9",
+    "speed": 8
+  },
+  {
+    "name": "mc-3",
+    "label": "MC City Line 3 - Writers Drive Line",
+    "subtitle": "Highway 1 Interchange-Citi Tower",
+    "description": "This subway line goes under the central Writer's Drive.",
+    "type": "normal",
+    "mode": "subway",
+    "color": "#F8C627",
+    "speed": 8
+  },
+  {
+    "name": "mc-4",
+    "label": "MC City Line 4 - Downtown Line",
+    "subtitle": "Beacon Jct-Citi Tower",
+    "description": "This subway line snakes around greater Minecraft City.",
+    "type": "normal",
+    "mode": "subway",
+    "color": "#792AAC",
+    "speed": 8
+  },
+  {
+    "name": "mc-a",
+    "label": "MC City Line A - Airport Line",
+    "subtitle": "Taiga-Citi Tower",
+    "description": "This subway line comes from the airport and loops around Quartz Square.",
+    "type": "normal",
+    "mode": "subway",
+    "color": "#158991",
+    "speed": 8
+  },
+  {
+    "name": "mc-b",
+    "label": "MC City Line B - Second Street Line",
+    "subtitle": "Diamond Avenue-Citi Tower",
+    "description": "This subway line heads under 2nd St.",
+    "type": "normal",
+    "mode": "subway",
+    "color": "#70B919",
+    "speed": 8
+  },
+  {
+    "name": "mc-c",
+    "label": "MC City Line C",
+    "subtitle": "Kevin Lab-Citi Lot",
+    "description": "This southern line stretches towards Kevin Lab.",
+    "type": "normal",
+    "mode": "subway",
+    "color": "#546D1B",
+    "speed": 8
+  },
+  {
+    "name": "mc-old",
+    "label": "Old Minecraft City Metro",
+    "subtitle": "Interchange East-Highway 1 Interchange",
+    "description": "This short line dates back to the beginnings of Minecraft City.",
+    "type": "normal",
+    "mode": "subway",
+    "color": "rgb(181, 151, 104)",
+    "speed": 8
+  }
+]

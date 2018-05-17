@@ -1,7 +1,16 @@
 window.addEventListener("load", async (e) => {
+  var queryString = location.search.substr(1);
+  var query = {};
+  queryString.split("&").forEach(function(part) {
+    var item = part.split("=");
+    query[item[0]] = decodeURIComponent(item[1]);
+  });
+
+  let data = query.data || "smeltville";
+
   // Compile services.
   let services = {};
-  let serviceData = await (await fetch("./data/smeltville/services.json")).json();
+  let serviceData = await (await fetch(`./data/${data}/services.json`)).json();
   serviceData.forEach((service) => {
     services[service.name] = service;
   });
@@ -11,7 +20,7 @@ window.addEventListener("load", async (e) => {
   // Compile stations.
   let stations = {};
   let places = [];
-  let stationData = await (await fetch("./data/smeltville/overworld.json")).json();
+  let stationData = await (await fetch(`./data/${data}/overworld.json`)).json();
   stationData.forEach((station) => {
     stations[station.name] = station;
     places.push({id: station.name, label: station.label + " Station", station: station.name});
@@ -20,7 +29,7 @@ window.addEventListener("load", async (e) => {
   console.log(stations);
 
   // Compile places.
-  let placeData = await (await fetch("./data/smeltville/places.json")).json();
+  let placeData = await (await fetch(`./data/${data}/places.json`)).json();
   places = places.concat(placeData).sort((a, b) => {
     if (a.label > b.label) {
       return 1;
@@ -69,7 +78,7 @@ window.addEventListener("load", async (e) => {
         neighbors = node.neighbors.map((neighbor) => {
           let extraTime = prev ? prev.time || 0 : 0;
           if (prev && prev.connection.service && neighbor.service !== prev.connection.service) {
-            extraTime += 10;
+            extraTime += 7;
           }
           return {origin: node, prev: prev, destination: stations[neighbor.destination], connection: neighbor, time: extraTime + (neighbor.time || (neighbor.distance / services[neighbor.service].speed))}
         });
@@ -117,16 +126,17 @@ window.addEventListener("load", async (e) => {
     let current;
     let isStopping = null;
     do {
+      if (visited.destination == destinationPlace) {
+        isStopping = visited;
+        break;
+      }
+
       visitedNodes[visited.destination.name || visited.destination.id] = true;
       currentNodes.splice(currentNodes.findIndex((node) => {
         return node.destination == visited.destination;
       }), 1);
       // Add neighbors to currentNodes.
       getNeighbors(visited.destination, visited).forEach((neighbor) => {
-        if (neighbor.destination == destinationPlace) {
-          isStopping = neighbor;
-        }
-
         if (!visitedNodes[neighbor.destination.name || neighbor.destination.id]) {
           if (!times[neighbor.destination.name || neighbor.destination.id] || neighbor.time < times[neighbor.destination.name || neighbor.destination.id]) {
             currentNodes.push(neighbor);
@@ -134,10 +144,6 @@ window.addEventListener("load", async (e) => {
           };
         }
       });
-
-      if (isStopping) {
-        break;
-      }
 
       currentNodes.sort((a, b) => {
         if (a.time > b.time) {
