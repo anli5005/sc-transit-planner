@@ -183,6 +183,8 @@ window.addEventListener("load", async (e) => {
           if (service && connection.connection.service === service.service) {
             service.stops.push(connection.origin.label);
             service.time += connection.time - (connection.prev ? connection.prev.time || 0 : 0);
+            service.platform = connection.connection.platform;
+            service.direction = connection.connection.direction;
           } else {
             if (service) {
               service.origin = service.stops.splice(-1, 1)[0];
