@@ -45,7 +45,9 @@
       {"service": "mc-1", "destination": "mc-pig-parkour", "distance": 50, "platform": 1, "direction": "to TNT Center"},
       {"service": "mc-1", "destination": "mc-hwy-1-interchange", "distance": 25, "platform": 2, "direction": "to Citi Tower"},
       {"service": "mc-2", "destination": "mc-diamond-monument", "distance": 21, "platform": 3, "direction": "to Diamond Monument"},
-      {"service": "mc-2", "destination": "mc-hwy-1-interchange", "distance": 25, "platform": 4, "direction": "to Hwy 1 Interchange"}
+      {"service": "mc-2", "destination": "mc-hwy-1-interchange", "distance": 25, "platform": 4, "direction": "to Hwy 1 Interchange"},
+      {"service": "mc-c", "destination": "mc-hwy-1-interchange", "distance": 26, "platform": 5, "direction": "to Citi Lot"},
+      {"service": "mc-c", "destination": "mc-tnt-cannon", "distance": 84, "platform": 6, "direction": "to Kevin Lab"}
     ],
     "exits": {
       "A": {"name": "1st St & Diamond Rd", "coords": [17, 237, -4]},
@@ -61,7 +63,9 @@
       {"service": "mc-1", "destination": "mc-citi-plaza-s", "distance": 37, "platform": 2, "direction": "to Citi Tower"},
       {"service": "mc-2", "destination": "mc-welcome-center", "distance": 25, "platform": 3, "direction": "to Welcome Center"},
       {"service": "mc-2", "destination": "mc-citi-plaza-s", "distance": 37, "platform": 4, "direction": "to Citi Plaza"},
-      {"service": "mc-3", "destination": "mc-writers-center", "distance": 10, "platform": 5, "direction": "WRITERS DR LINE"}
+      {"service": "mc-3", "destination": "mc-writers-center", "distance": 10, "platform": 5, "direction": "WRITERS DR LINE"},
+      {"service": "mc-c", "destination": "mc-citi-plaza-s", "distance": 22, "platform": 6, "direction": "to Citi Lot"},
+      {"service": "mc-c", "destination": "mc-welcome-center", "distance": 26, "platform": 7, "direction": "to Kevin Lab"}
     ],
     "exits": {
       "Fountain": {"name": "Waterfall/Mooshroom Rail/1st St", "coords": [-10, 237, 5]},
@@ -78,7 +82,9 @@
       {"service": "mc-1", "destination": "mc-hwy-1-interchange", "distance": 37, "platform": 1, "direction": "to Hwy 1 Interchange"},
       {"service": "mc-2", "destination": "mc-hwy-1-interchange", "distance": 37, "platform": 2, "direction": "to Hwy 1 Interchange"},
       {"service": "mc-1", "destination": "mc-citi-plaza-n", "distance": 30, "platform": 3, "direction": "to Citi Tower"},
-      {"service": "mc-2", "destination": "mc-citi-plaza-n", "distance": 30, "platform": 4, "direction": "to Citi Tower"}
+      {"service": "mc-2", "destination": "mc-citi-plaza-n", "distance": 30, "platform": 4, "direction": "to Citi Tower"},
+      {"service": "mc-c", "destination": "mc-citi-lot", "distance": 48, "platform": 5, "direction": "to Citi Lot"},
+      {"service": "mc-c", "destination": "mc-hwy-1-interchange", "distance": 22, "platform": 6, "direction": "to Kevin Lab"}
     ],
     "exits": {
       "A": {"name": "Highway 1 & 1st St/Citi Plaza 1", "coords": [-41, 237, -1]},
@@ -112,7 +118,9 @@
       {"service": "mc-2", "destination": "mc-citi-plaza-n", "distance": 25, "platform": 2, "direction": "to Citi Plaza"},
       {"service": "mc-2", "destination": "mc-animal-hall", "distance": 38, "platform": 3, "direction": "to Animal Hall"},
       {"service": "mc-3", "destination": "mc-animal-hall", "distance": 32, "platform": 5, "direction": "to Hwy 1 Interchange"},
-      {"service": "mc-b", "destination": "mc-citi-plaza-n", "distance": 37, "platform": 7, "direction": "to Diamond Monument"}
+      {"service": "mc-b", "destination": "mc-citi-plaza-n", "distance": 37, "platform": 7, "direction": "to Diamond Monument"},
+      {"service": "mc-4", "destination": "mc-quartz-sq", "distance": 30, "platform": 8, "direction": "to Beacon Jct"},
+      {"service": "mc-a", "destination": "mc-quartz-sq", "distance": 84, "platform": 9, "direction": "to Quartz Sq/Airport/Spruce Plains"}
     ],
     "exits": {
       "Elevator": {"name": "Citi Tower", "coords": [-55, 237, -86]}
@@ -255,10 +263,135 @@
     "label": "Sand Counter",
     "coords": [-68, 229, 36],
     "neighbors": [
+      {"service": "mc-4", "destination": "mc-citi-lot", "distance": 45, "platform": 1, "direction": "to Citi Tower"},
       {"service": "mc-4", "destination": "mc-piggy-pit", "distance": 43, "platform": 2, "direction": "to Beacon Jct"}
     ],
     "exits": {
       "1": {"name": "Sand Counter", "coords": [-72, 237, 37]}
+    }
+  },
+  {
+    "name": "mc-citi-lot",
+    "label": "Citi Lot",
+    "coords": [-68, 229, -11],
+    "neighbors": [
+      {"service": "mc-4", "destination": "mc-mooshroom", "distance": 30, "platform": 1, "direction": "to Citi Tower"},
+      {"service": "mc-4", "destination": "mc-sand-counter", "distance": 45, "platform": 2, "direction": "to Beacon Jct"},
+      {"service": "mc-c", "destination": "mc-citi-plaza-s", "distance": 58, "platform": 3, "direction": "to Kevin Lab"}
+    ],
+    "exits": {
+      "Citi Lot": {"name": "Citi Plaza 1/Message Lever", "coords": [-64, 237, -1]}
+    }
+  },
+  {
+    "name": "mc-mooshroom",
+    "label": "Mooshroom",
+    "coords": [-100, 229, -11],
+    "neighbors": [
+      {"service": "mc-4", "destination": "mc-quartz-sq", "distance": 92, "platform": 1, "direction": "to Citi Tower"},
+      {"service": "mc-4", "destination": "mc-citi-lot", "distance": 30, "platform": 2, "direction": "to Beacon Jct"}
+    ],
+    "exits": {
+      "1": {"name": "Redstone Tower", "coords": [-109, 237, -6]},
+      "2": {"name": "Mooshroom Valley/Mooshroom Rail", "coords": [-115, 237, -6]}
+    }
+  },
+  {
+    "name": "mc-quartz-sq",
+    "label": "Quartz Square",
+    "coords": [-100, 233, -91],
+    "neighbors": [
+      {"service": "mc-4", "destination": "mc-citi-tower", "distance": 30, "platform": 1, "direction": "to Citi Tower"},
+      {"service": "mc-4", "destination": "mc-mooshroom", "distance": 92, "platform": 2, "direction": "to Beacon Jct"},
+      {"service": "mc-a", "destination": "mc-quartz-sq-n", "distance": 54, "platform": 3, "direction": "to Quartz Square N/Airport/Spruce Plains"}
+    ],
+    "exits": {
+      "1": {"name": "Quartz Square/Terracotta Apartments", "coords": [-88, 237, -91]}
+    }
+  },
+  {
+    "name": "mc-quartz-sq-n",
+    "label": "Quartz Square N",
+    "coords": [-119, 229, -131],
+    "neighbors": [
+      {"service": "mc-a", "destination": "mc-airport", "distance": 159, "platform": 1, "direction": "to Airport/Spruce"},
+      {"service": "mc-a", "destination": "mc-quartz-park", "distance": 83, "platform": 2, "direction": "Citi Tower/Quartz Square"}
+    ],
+    "exits": {
+      "1": {"name": "Quartz Square", "coords": [-107, 237, -131]}
+    }
+  },
+  {
+    "name": "mc-quartz-park",
+    "label": "Quartz Park",
+    "coords": [-39, 227, -125],
+    "neighbors": [
+      {"service": "mc-a", "destination": "mc-citi-tower", "distance": 40, "platform": 1, "direction": "to Airport/Spruce"}
+    ],
+    "exits": {
+      "1": {"name": "Quartz Park", "coords": [-35, 237, -119]}
+    }
+  },
+  {
+    "name": "mc-airport",
+    "label": "Airport",
+    "coords": [-277, 229, -131],
+    "neighbors": [
+      {"service": "mc-a", "destination": "mc-quartz-sq-n", "distance": 159, "platform": 1, "direction": "MC City"},
+      {"service": "mc-a", "destination": "mc-spruce-plains", "distance": 78, "platform": 2, "direction": "to Spruce Plains"}
+    ],
+    "exits": {
+      "1": {"name": "Spruce Plains", "coords": [-285, 237, -128]},
+      "2": {"name": "Spruce Plains", "coords": [-290, 237, -135]},
+      "3": {"name": "Spruce Plains", "coords": [-281, 237, -135]},
+      "4": {"name": "Spruce Plains", "coords": [-282, 237, -141]}
+    }
+  },
+  {
+    "name": "mc-spruce-plains",
+    "label": "Spruce Plains",
+    "coords": [-355, 229, -131],
+    "neighbors": [
+      {"service": "mc-a", "destination": "mc-airport", "distance": 78, "platform": 1, "direction": "to Airport/MC City"}
+    ],
+    "exits": {
+      "1": {"name": "Spruce Plains", "coords": [-366, 237, -132]}
+    }
+  },
+  {
+    "name": "mc-tnt-cannon",
+    "label": "TNT Cannon",
+    "coords": [101, 242, 11],
+    "neighbors": [
+      {"service": "mc-c", "destination": "mc-welcome-center", "distance": 84, "platform": 1, "direction": "to Citi Lot"},
+      {"service": "mc-c", "destination": "mc-kevin-pit", "distance": 85, "platform": 2, "direction": "to Kevin Lab"}
+    ],
+    "exits": {
+      "1": {"name": "TNT Cannon", "coords": [115, 237, 11]}
+    }
+  },
+  {
+    "name": "mc-kevin-pit",
+    "label": "Kevin Pit",
+    "coords": [145, 242, 51],
+    "neighbors": [
+      {"service": "mc-c", "destination": "mc-tnt-cannon", "distance": 85, "platform": 1, "direction": "to Citi Lot"},
+      {"service": "mc-c", "destination": "mc-kevin-lab", "distance": 86, "platform": 2, "direction": "to Kevin Lab"}
+    ],
+    "exits": {
+      "Ground": {"name": "Bedrock Structures/See To The Bottom of The World/Kevin Pit", "coords": [136, 237, 45]}
+    }
+  },
+  {
+    "name": "mc-kevin-lab",
+    "label": "Kevin Lab",
+    "coords": [194, 237, 57],
+    "neighbors": [
+      {"service": "mc-c", "destination": "mc-kevin-pit", "distance": 86, "platform": 1, "direction": "to Citi Lot"}
+    ],
+    "exits": {
+      "1": {"name": "Bedrock Structures/See To The Bottom of The World/Kevin Pit", "coords": [136, 237, 45]},
+      "2": {"name": "Glass Enclosure", "coords": [189, 237, 44]}
     }
   }
 ]
