@@ -390,8 +390,8 @@
       {"service": "mc-c", "destination": "mc-kevin-pit", "distance": 86, "platform": 1, "direction": "to Citi Lot"}
     ],
     "exits": {
-      "1": {"name": "Bedrock Structures/See To The Bottom of The World/Kevin Pit", "coords": [136, 237, 45]},
-      "2": {"name": "Glass Enclosure", "coords": [189, 237, 44]}
+      "1": {"name": "Glass Enclosure", "coords": [189, 237, 45]},
+      "2": {"name": "Kevin Wool Lab", "coords": [197, 237, 50]}
     }
   }
 ]

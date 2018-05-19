@@ -178,5 +178,23 @@
     "label": "Sand Bar",
     "coords": [-61, 63, 421],
     "stations": ["smetro-ocean"]
+  },
+  {
+    "id": "grassy-peninsula-w",
+    "label": "Grassy Peninsula West",
+    "coords": [24, 64, 0],
+    "stations": ["smetro-meander-bridge"]
+  },
+  {
+    "id": "grassy-peninsula-e",
+    "label": "Grassy Peninsula East",
+    "coords": [80, 68, -6],
+    "stations": ["smetro-forest", "smetro-meander-bridge"]
+  },
+  {
+    "id": "forest-lava-pond",
+    "label": "Lava Pond",
+    "coords": [101, 64, 11],
+    "stations": ["smetro-forest"]
   }
 ]

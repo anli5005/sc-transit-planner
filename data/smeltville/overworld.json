@@ -1,10 +1,35 @@
 [
   {
+    "name": "smetro-forest",
+    "label": "Forest",
+    "coords": [128, 69, 11],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-meander-bridge", "distance": 112, "platform": 1, "direction": "Smeltville"}
+    ],
+    "exits": {
+      "1": {"name": "Horseway 1 N", "coords": [134, 69, 12]}
+    }
+  },
+  {
+    "name": "smetro-meander-bridge",
+    "label": "Meander Bridge",
+    "coords": [16, 69, 11],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-sugar-cane", "distance": 142, "platform": 1, "direction": "to Smeltville"},
+      {"service": "smetro-a", "destination": "smetro-forest", "distance": 112, "platform": 2, "direction": "to Glass Desert"}
+    ],
+    "exits": {
+      "1": {"name": "Horseway 1 Southbound", "coords": [8, 69, 11]},
+      "2": {"name": "Horseway 1 Northbound/Meander Bridge", "coords": [22, 73, 12]}
+    }
+  },
+  {
     "name": "smetro-sugar-cane",
     "label": "Sugar Cane",
     "coords": [-73, 64, 54],
     "neighbors": [
-      {"service": "smetro-a", "destination": "smetro-acacia-jct", "distance": 39, "platform": 1, "direction": "towards Smeltville"}
+      {"service": "smetro-a", "destination": "smetro-acacia-jct", "distance": 39, "platform": 1, "direction": "towards Smeltville"},
+      {"service": "smetro-a", "destination": "smetro-meander-bridge", "distance": 142, "platform": 2, "direction": "to Glass Desert"}
     ],
     "exits": {
       "1": {"name": "Sugar Cane Farm/HORSEWAY 1", "coords": [-58, 69, 51]},
