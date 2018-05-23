@@ -1,10 +1,19 @@
 [
   {
+    "name": "smetro-glass-desert",
+    "label": "Glass Desert",
+    "coords": [363, 68, -53],
+    "neighbors": [
+      {"service": "smetro-a", "destination": "smetro-forest", "distance": 300, "time": 36, "platform": 1, "direction": "Smeltville"}
+    ]
+  },
+  {
     "name": "smetro-forest",
     "label": "Forest",
     "coords": [128, 69, 11],
     "neighbors": [
-      {"service": "smetro-a", "destination": "smetro-meander-bridge", "distance": 112, "platform": 1, "direction": "Smeltville"}
+      {"service": "smetro-a", "destination": "smetro-meander-bridge", "distance": 112, "platform": 1, "direction": "Smeltville"},
+      {"service": "smetro-a", "destination": "smetro-glass-desert", "distance": 300, "time": 36, "platform": 1, "direction": "Glass Desert"}
     ],
     "exits": {
       "1": {"name": "Horseway 1 N", "coords": [134, 69, 12]}
